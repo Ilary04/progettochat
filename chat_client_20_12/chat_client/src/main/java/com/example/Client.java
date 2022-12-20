@@ -6,7 +6,6 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
 import java.net.UnknownHostException;
-import java.util.ArrayList;
 
 
 
@@ -145,6 +144,7 @@ public class Client
                 String msgtouserb = "";
                 while(true)
                 {
+                    System.out.print("[messaggio]:");
                     msgtouserb = tastiera.readLine();
                     // bisogna inviarlo verso tutti
                     pr.println(msgtouserb);
@@ -187,6 +187,7 @@ public class Client
 
         while(true)
         {
+            System.out.print("[messaggio]:");
             msgtobroadcast = tastiera.readLine();
             // bisogna inviarlo verso tutti
             if(!msgtobroadcast.equals("exit"))
