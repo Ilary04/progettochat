@@ -178,11 +178,12 @@ public class Client
     public void messaggioPubblico() throws IOException
     {
         System.out.println("CHAT PUBBILICA");
+        System.out.println("per uscire premi [exit] ");
         pr.flush(); // cancello la roba dentro lo stream altrimenti mi prende la scelta
         ClientThreadListen clientlistener = new ClientThreadListen(s);
         clientlistener.start();
         String msgtobroadcast = "";
-        System.out.println(msgtobroadcast);
+
 
         while(true)
         {
