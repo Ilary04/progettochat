@@ -130,6 +130,7 @@ public class ClientHandler extends Thread {
         while(true)
         {
             String m = br.readLine();
+            m="["+userB+"]:"+m;
             if(!m.equals("exit"))
             {
                 // invio del messaggio verso il client B
