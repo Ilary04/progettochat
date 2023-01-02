@@ -5,13 +5,10 @@ import java.net.UnknownHostException;
 
 public class clientMain {
 
-    public static void main(String[] args) throws UnknownHostException, IOException {
-        
-        Client c = new Client();
-
+    public static void main(String[] args) throws UnknownHostException, IOException, InterruptedException 
+    {
+        Client c = new Client();  
         c.execute();
-        
-        
     }
     
 }
